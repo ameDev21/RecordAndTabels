@@ -14,11 +14,8 @@ public class Record {
   public void setSurname(final String surname) { this.surname = surname; }
 
   public boolean isEqualTo(Record record_to_compare) {
-    if (this.name.equals(record_to_compare.getName()) &&
+    return (this.name.equals(record_to_compare.getName()) &&
         this.surname.equals(record_to_compare.getSurname()))
-      return true;
-    else
-      return false;
   }
   @Override
   public String toString() {
